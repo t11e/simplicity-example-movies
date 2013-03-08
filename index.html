@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <title>simplicity-template-example</title>
+        <title>simplicity-example-movies</title>
         <link href="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
         <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
         <link href="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.css" rel="stylesheet">
@@ -18,20 +18,22 @@
         <div class="navbar navbar-inverse navbar-static-top">
             <div class="navbar-inner">
                 <div class="container">
-                    <a class="brand" href="">simplicity-template-example</a>
+                    <a class="brand" href="">simplicity-example-movies</a>
                     <ul class="nav">
-                        <li><a href="http://github.com/t11e/simplicity-template-example">Repository</a><li>
+                        <li><a href="http://github.com/t11e/simplicity-example-movies">Repository</a><li>
                         <li><a href="http://simplicitywidgets.org">Simplicity Widgets</a><li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="container">
-            <h1>simplicity-template-example</h1>
-            <p>
-                This is a template project that you can fork or copy to help get started when creating your own
-                search page.
-            </p>
+            <div>
+               <h1>simplicity-example-movies</h1>
+               <p>
+                   This example uses data from <a href="">Freebase</a> under the
+                   <a href="http://creativecommons.org/licenses/by/2.5/">Creatve Commons</a> license.
+               </p>
+            </div>
             <hr/>
             <div class="row">
                 <div class="span3">
@@ -41,14 +43,29 @@
                                 <input id="q" name="q" type="text" class="span2" placeholder="Keyword search">
                                 <button class="btn" type="button">Go!</button>
                             </div>
+                            <button id="resetSearch" type="button" name="resetSearch" class="btn">Reset Search</button>
+                            <div id="initialReleaseYear">
+                                <label><span id="initialReleaseYearCriteriaDesc"></span></label>
+                                <div id="initialReleaseYearSlider"></div>
+                                <input id="initialReleaseYearMin" name="initialReleaseYearMin" type="hidden"/>
+                                <input id="initialReleaseYearMax" name="initialReleaseYearMax" type="hidden"/>
+                            </div>
+                            <label><span id="runtimeCriteriaDesc"></span></label>
+                            <div id="runtimeSlider"></div>
+                            <input id="runtimeMin" name="runtimeMin" type="hidden"/>
+                            <input id="runtimeMax" name="runtimeMax" type="hidden"/>
+                            <label>Rating
+                                <select id="rating" name="rating" multiple="multiple">
+                                    <option value="">Select</option>
+                                </select>
+                            </label>
+                            <div id="ratingFancy"></div>
                             <label>Genre
                                 <select id="genre" name="genre" multiple="multiple">
                                     <option value="">Select</option>
                                 </select>
                             </label>
                             <div id="genreFancy"></div>
-                            <hr />
-                            <button id="resetSearch" type="button" name="resetSearch" class="btn">Reset Search</button>
                         </fieldset>
                     </form>
                 </div>
@@ -59,6 +76,22 @@
                 </div>
             </div>
         </div>
+        <footer class="footer">
+            <hr />
+            <div class="container">
+              <div class="freebase-attribution">
+                  <img alt="Freebase CC-BY" height="23px" style="float: left; border: 0;" width="61px" src="http://www.freebase.com/policies/freebase-cc-by-61x23.png"/>
+                  <div style="font-size: x-small; margin-left: 70px; height: 30px; ">
+                    Source:
+                    <a href="http://www.freebase.com/">Freebase</a>, licensed under
+                    <a href="http://creativecommons.org/licenses/by/2.5/">CC-BY</a><br/>
+                    Other content from
+                    <a href="http://en.wikipedia.org/">Wikipedia</a>,
+                    licensed under <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA</a>
+                  </div>
+                </div>
+              </div>
+        </footer>
         <!--[if lt IE 9]>
             <script src="http://cdn.transparensee.com/lib/json2/2010-11-17/json2.min.js"></script>
         <![endif]-->

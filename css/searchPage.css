@@ -1,8 +1,41 @@
-.ui-simplicity-search-results .exactmatch pre {
+.exactmatch {
     background-color: #f5f5f5;
 }
 
-.ui-simplicity-search-results .closematch pre {
+.closematch {
     color: #a5a5a5;
     background-color: #ffffff;
+}
+
+.film-result {
+    margin-bottom: 5px;
+}
+
+.film-name-and-year {
+    margin-top: 5px;
+}
+.film-name {
+    font-size: 2em;
+}
+
+.film-release-year {
+    font-size: 1.5em;
+    padding-left: 1em;
+}
+
+.film-genre {
+    font-size: .9em;
+}
+
+#searchForm {
+    padding-right: 2em;
+}
+
+#searchForm label{
+    margin-top: 0.5em;
+}
+
+#ratingFancy ul,
+#genreFancy ul {
+    margin: 0;
 }

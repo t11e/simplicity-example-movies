@@ -1,5 +1,6 @@
-This is a template project that you can fork or copy to help get started when
-setting up a search page that uses the [Simplicity Widgets](http://simplicitywidgets.org).
+This is a example search page that showcases movie search using the
+[Simplicity Widgets](http://simplicitywidgets.org).
 
-The [live example](http://t11e.github.com/simplicity-template-example) shows
-a working search page.
+See the [live example](http://t11e.github.com/simplicity-example-movies).
+
+See [how we obtained this data](https://github.com/t11e/freebase-movies).
